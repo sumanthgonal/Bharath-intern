@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 0.35fr .65fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    min-height: 100vh;
+    background-color: #7d3305;
+}
+
+
+.side_bar{
+    height: 100vh;
+    background-image: url("bianca-ackermann-gR8QukPoAvQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    color: #000;
+}
+
+.side_bar h1{
+    padding: 5px;
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.side_bar p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    background: #2b2121;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.4);
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.temperature-icon{
+    font-size: 55px;
+    color: #ffffff;
+}
+
+h1{
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-size: 30px;
+}
+
+#celsius, #fahrenheit, #kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+input{
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+}
+
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 12px;
+    text-align: center;
+    font-size: 30px;
+    background: #513735;
+    color: #100000;
+    border-radius: 0 8px 8px 0;
+}
+
+
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #000;
+    color: #fff;
+}
+
+footer{
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+}
